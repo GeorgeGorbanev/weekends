@@ -1,0 +1,10 @@
+AllCops:
+  DisplayCopNames: true
+  Exclude:
+    - '**/Rakefile'
+    - '**/Gemfile'
+    - '**/weekends.gemspec'
+Documentation:
+  Enabled: false
+Metrics/BlockLength:
+  Enabled: false
