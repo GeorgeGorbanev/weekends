@@ -1,4 +1,4 @@
-# Weekends [![Build Status](https://travis-ci.org/GeorgeGorbanev/weekends.svg?branch=master)](https://travis-ci.org/GeorgeGorbanev/weekends)
+# Weekends [![Build Status](https://travis-ci.org/GeorgeGorbanev/weekends.svg?branch=master)](https://travis-ci.org/GeorgeGorbanev/weekends) [![Gem Version](https://badge.fury.io/rb/weekends.svg)](https://badge.fury.io/rb/weekends)
 
 This gem import class `Weekend` that help to identify weekend dates.
 
