@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ['GeorgeGorbanev']
   spec.email         = ['GeorgeGorbanev@gmail.com']
 
-  spec.summary       = 'Weekend class with methods like #near and #today?'
+  spec.summary       = 'Weekend class with methods like #nearest_weekend, #on_date? and #today?'
   spec.homepage      = 'https://github.com/GeorgeGorbanev/weekends'
   spec.license       = 'MIT'
 

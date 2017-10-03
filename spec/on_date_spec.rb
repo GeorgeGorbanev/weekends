@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'time'
 
 RSpec.describe Weekend do
   let(:monday) { Time.new(2017, 10, 2) }
@@ -21,6 +22,26 @@ RSpec.describe Weekend do
     it 'return true for weekends' do
       expect(Weekend.on_date?(saturday)).to be true
       expect(Weekend.on_date?(sunday)).to be true
+    end
+  end
+
+  describe '#today?' do
+    context 'when weekend' do
+      let(:weekend) { Time.parse('2017-10-07 6:00:40 +0300') }
+      before { allow(Time).to receive(:now).and_return weekend }
+
+      it 'return true' do
+        expect(Weekend.today?).to be true
+      end
+    end
+
+    context 'when weekday' do
+      let(:weekday) { Time.parse('2017-10-03 6:00:40 +0300') }
+      before { allow(Time).to receive(:now).and_return weekday }
+
+      it 'return false' do
+        expect(Weekend.today?).to be false
+      end
     end
   end
 end
